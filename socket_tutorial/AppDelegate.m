@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  socket_tutorial
 //
-//  Created by xiaoliangwang on 14-7-4.
-//  Copyright (c) 2014年 芳仔小脚印. All rights reserved.
+//  Created by xiaoliangwang on 17-4-18.
+//  Copyright (c) 2014年 xiaoliangwang. All rights reserved.
 //
 
 #import "AppDelegate.h"

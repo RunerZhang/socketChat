@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		238C40D21E9CDD50009898A8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238C40D11E9CDD50009898A8 /* Launch Screen.storyboard */; };
 		FB28606E196646EE0099FD89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB28606D196646EE0099FD89 /* Foundation.framework */; };
 		FB286070196646EE0099FD89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB28606F196646EE0099FD89 /* CoreGraphics.framework */; };
 		FB286072196646EE0099FD89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB286071196646EE0099FD89 /* UIKit.framework */; };
@@ -21,6 +22,10 @@
 		FB28608F196646EE0099FD89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB286071196646EE0099FD89 /* UIKit.framework */; };
 		FB286097196646EE0099FD89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB286095196646EE0099FD89 /* InfoPlist.strings */; };
 		FB286099196646EE0099FD89 /* socket_tutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB286098196646EE0099FD89 /* socket_tutorialTests.m */; };
+		FB2860A4196647960099FD89 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2860A3196647960099FD89 /* Singleton.m */; };
+		FB2860AB196647F50099FD89 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2860A8196647F50099FD89 /* AsyncSocket.m */; };
+		FB2860AC196647F50099FD89 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2860AA196647F50099FD89 /* AsyncUdpSocket.m */; };
+		FB2860AE196648000099FD89 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2860AD196648000099FD89 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		238C40D11E9CDD50009898A8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		FB28606A196646EE0099FD89 /* socket_tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socket_tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB28606D196646EE0099FD89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB28606F196646EE0099FD89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +59,13 @@
 		FB286094196646EE0099FD89 /* socket_tutorialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "socket_tutorialTests-Info.plist"; sourceTree = "<group>"; };
 		FB286096196646EE0099FD89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FB286098196646EE0099FD89 /* socket_tutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = socket_tutorialTests.m; sourceTree = "<group>"; };
+		FB2860A2196647960099FD89 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Singleton.h; path = classes/Singleton.h; sourceTree = "<group>"; };
+		FB2860A3196647960099FD89 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Singleton.m; path = classes/Singleton.m; sourceTree = "<group>"; };
+		FB2860A7196647F50099FD89 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		FB2860A8196647F50099FD89 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		FB2860A9196647F50099FD89 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		FB2860AA196647F50099FD89 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		FB2860AD196648000099FD89 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2860AE196648000099FD89 /* CFNetwork.framework in Frameworks */,
 				FB286070196646EE0099FD89 /* CoreGraphics.framework in Frameworks */,
 				FB286072196646EE0099FD89 /* UIKit.framework in Frameworks */,
 				FB28606E196646EE0099FD89 /* Foundation.framework in Frameworks */,
@@ -82,6 +96,7 @@
 		FB286061196646EE0099FD89 = {
 			isa = PBXGroup;
 			children = (
+				FB2860A5196647F50099FD89 /* Resources */,
 				FB286073196646EE0099FD89 /* socket_tutorial */,
 				FB286092196646EE0099FD89 /* socket_tutorialTests */,
 				FB28606C196646EE0099FD89 /* Frameworks */,
@@ -101,6 +116,7 @@
 		FB28606C196646EE0099FD89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FB2860AD196648000099FD89 /* CFNetwork.framework */,
 				FB28606D196646EE0099FD89 /* Foundation.framework */,
 				FB28606F196646EE0099FD89 /* CoreGraphics.framework */,
 				FB286071196646EE0099FD89 /* UIKit.framework */,
@@ -115,8 +131,11 @@
 				FB28607C196646EE0099FD89 /* AppDelegate.h */,
 				FB28607D196646EE0099FD89 /* AppDelegate.m */,
 				FB28607F196646EE0099FD89 /* Main.storyboard */,
+				FB2860A2196647960099FD89 /* Singleton.h */,
+				FB2860A3196647960099FD89 /* Singleton.m */,
 				FB286082196646EE0099FD89 /* ViewController.h */,
 				FB286083196646EE0099FD89 /* ViewController.m */,
+				238C40D11E9CDD50009898A8 /* Launch Screen.storyboard */,
 				FB286085196646EE0099FD89 /* Images.xcassets */,
 				FB286074196646EE0099FD89 /* Supporting Files */,
 			);
@@ -150,6 +169,25 @@
 				FB286095196646EE0099FD89 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB2860A5196647F50099FD89 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB2860A6196647F50099FD89 /* socket */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FB2860A6196647F50099FD89 /* socket */ = {
+			isa = PBXGroup;
+			children = (
+				FB2860A7196647F50099FD89 /* AsyncSocket.h */,
+				FB2860A8196647F50099FD89 /* AsyncSocket.m */,
+				FB2860A9196647F50099FD89 /* AsyncUdpSocket.h */,
+				FB2860AA196647F50099FD89 /* AsyncUdpSocket.m */,
+			);
+			path = socket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				238C40D21E9CDD50009898A8 /* Launch Screen.storyboard in Resources */,
 				FB286086196646EE0099FD89 /* Images.xcassets in Resources */,
 				FB286078196646EE0099FD89 /* InfoPlist.strings in Resources */,
 				FB286081196646EE0099FD89 /* Main.storyboard in Resources */,
@@ -250,6 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB286084196646EE0099FD89 /* ViewController.m in Sources */,
+				FB2860AB196647F50099FD89 /* AsyncSocket.m in Sources */,
+				FB2860A4196647960099FD89 /* Singleton.m in Sources */,
+				FB2860AC196647F50099FD89 /* AsyncUdpSocket.m in Sources */,
 				FB28607E196646EE0099FD89 /* AppDelegate.m in Sources */,
 				FB28607A196646EE0099FD89 /* main.m in Sources */,
 			);
@@ -456,6 +498,7 @@
 				FB28609E196646EE0099FD89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB28609F196646EE0099FD89 /* Build configuration list for PBXNativeTarget "socket_tutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +507,7 @@
 				FB2860A1196646EE0099FD89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
