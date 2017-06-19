@@ -1,8 +1,5 @@
 # socketChat
 
-> 非常感谢原作者 https://github.com/iOSRainbow/socket_tutorial
-> 此Demo是在原作者Demo基础上完善的
-
 此Demo可能用在直播软件聊天比较合适 效果如截图3所示
 
 ### 1.打开根目录的SocketTool 截图如下
